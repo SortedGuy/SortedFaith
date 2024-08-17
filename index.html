@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortedfaith</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SortedFaith</h1>
+            <p>The Sword - Word of God</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#verses">Verses</a></li>
+                    <li><a href="#fun-facts">Fun Facts</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="content home-section">
+            <h2>Greetings from someperson, Welcome.</h2>
+            <p>Feeling a certain way? Let the word of God comfort you.</p>
+        </section>
+
+        <section id="verses" class="content verses-section">
+            <h2>Verses</h2>
+            <div class="feelings-selector">
+                <label for="feeling">How are you feeling?</label>
+                <select id="feeling">
+                    <option value="">Select...</option>
+                    <option value="sad">Sad</option>
+                    <option value="lost">Lost</option>
+                    <option value="confused">Confused</option>
+                    <option value="grateful">Grateful</option>
+                    <option value="annoyed">Annoyed</option>
+                </select>
+                <button id="get-verse">Get Verse</button>
+            </div>
+            <div id="verses-container">
+                <!-- Verses will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="fun-facts" class="content fun-facts-section">
+            <h2>Fun Facts</h2>
+            <div class="fun-facts-item" id="thumbs-up-count">
+                <h3>Thumbs Up</h3>
+                <p>0</p>
+            </div>
+            <div class="fun-facts-item" id="time-spent">
+                <h3>Time Spent</h3>
+                <p>0 seconds</p>
+            </div>
+            <h3>Favorite verses: </h3>
+            <div class="fun-facts-item" id="favorited-verses">
+                <h3>Your Favorite Verses</h3> <!-- Updated text -->
+                <div class="favorited-list">
+                    <!-- Favorited verses will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content about-section">
+            <h2>About This Site</h2>
+            <p>Hi!! Made this site because i was bored, and who knows , it might help people :p</p>
+            <p><h1>!</h1>The data saves, you just have to choose a feeling for it to load.<h1>!</h1></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 SortedFaith</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
