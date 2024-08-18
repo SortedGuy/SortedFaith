@@ -14,10 +14,31 @@ body {
 }
 
 header {
+    position: relative;
     text-align: center;
     padding: 20px 0;
     background-color: #1f1f1f;
     border-bottom: 3px solid #ff4081;
+    background-image: url('file:///C:/Users/New/Downloads/Rcross-removebg-preview.png'); /* Add the cross image here */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Adjust size as needed */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 0;
+}
+
+header h1, header p, header nav {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
